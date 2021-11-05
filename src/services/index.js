@@ -52,7 +52,6 @@ export async function insertProduct(dataProduct){
                 redirect: 'follow'
                 }
                 )
-                console.log(response)
             return response
         } catch(e){
             console.log(e)

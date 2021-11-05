@@ -22,7 +22,6 @@ function App() {
     loadProducts()
   },[])
 
-  console.log(products)
     return (
       <div className="App">
       <TableProduct product={products}/>

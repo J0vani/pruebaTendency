@@ -53,8 +53,6 @@ function Form() {
         
     const handleChange = e => {
         const {name, value} = e.target
-        console.log(name,value)
-
         setFormValues({
             ...formValues, [name] : value
         })
