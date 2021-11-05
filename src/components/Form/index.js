@@ -59,6 +59,7 @@ function Form() {
     }
 
     const handleSubmit = (e) => {
+        e.preventDefault()
         insertProduct(formValues)
     }
 

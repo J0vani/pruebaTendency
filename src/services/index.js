@@ -25,7 +25,6 @@ export  async function getProduct(){
 
 export async function insertProduct(dataProduct){
         try{
-            console.log(dataProduct)
             const response = await axios({
                 method: 'POST',
                 url: baseUrl,
