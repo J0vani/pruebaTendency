@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import {TextField} from "@mui/material";
 import { makeStyles } from '@mui/styles';
 import Button from '@mui/material/Button';
-import { flexbox } from '@mui/system';
 import {insertProduct} from '../../services'
 
 
@@ -62,6 +61,7 @@ function Form() {
     }
 
     const handleSubmit = (e) => {
+        e.preventDefault()
         insertProduct(formValues)
     }
 

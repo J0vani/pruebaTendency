@@ -30,7 +30,7 @@ export async function insertProduct(dataProduct){
                 method: 'POST',
                 url: baseUrl,
                 headers: { 
-                    'Authorization': 'Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwUGFINU55VXRxTUkzMDZtajdZVHdHV3JIZE81cWxmaCIsImlhdCI6MTYyMDY2Mjk4NjIwM30.lhfzSXW9_TC67SdDKyDbMOYiYsKuSk6bG6XDE1wz2OL4Tq0Og9NbLMhb0LUtmrgzfWiTrqAFfnPldd8QzWvgVQ',
+                    'Authorization': `Bearer ${API_KEY}`,
                     'Content-Type': 'application/json'
                 },
                 data: JSON.stringify({
@@ -58,6 +58,4 @@ export async function insertProduct(dataProduct){
             console.log(e)
         }
 }
-
-
 
