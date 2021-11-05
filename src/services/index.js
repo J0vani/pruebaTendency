@@ -51,7 +51,7 @@ export async function insertProduct(dataProduct){
                 redirect: 'follow'
                 }
                 )
-            return response
+            return window.location.reload();
         } catch(e){
             console.log(e)
         }
